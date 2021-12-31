@@ -15,15 +15,15 @@ interface Config{
 }
 
 let config: Config = {
-    HttpPort: getConf("PORT", ""),
+    HttpPort: getConf("PORT", "3000"),
     MongoHost: getConf("MONGO_HOST", "localhost"),
     MongoPort: parseInt(getConf("MONGO_PORT", "27017")),
-    MongoDatabase: getConf("MONGO_DATABASE", "vgik"),
+    MongoDatabase: getConf("MONGO_DATABASE", "best"),
     MongoPassword: getConf("MONGO_PASSWORD", ""),
     MongoDbAtlasURI:getConf("MONGODB_URI",""),
     MongoUser: getConf("MONGO_USER", ""),
-    NodeEnv: getConf("NODE_ENV", "production"),
-    MongoAuthDisable: false
+    NodeEnv: getConf("NODE_ENV", "development"),
+    MongoAuthDisable: true
 }
 
 function getConf(name: string, def: string = ""): string {
