@@ -23,7 +23,7 @@ let config: Config = {
     MongoDbAtlasURI:getConf("MONGODB_URI",""),
     MongoUser: getConf("MONGO_USER", ""),
     NodeEnv: getConf("NODE_ENV", "production"),
-    MongoAuthDisable: false
+    MongoAuthDisable: true
 }
 
 function getConf(name: string, def: string = ""): string {
