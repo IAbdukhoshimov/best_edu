@@ -1,6 +1,6 @@
 import { IContact } from "../../models/contact_us"; 
 
-export interface ICatergoryAllResponse {
+export interface IContactAllResponse {
     payload:IContact[]
     count: number
 }
